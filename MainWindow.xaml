@@ -1,0 +1,41 @@
+﻿<Window x:Class="BotCustomer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BotCustomer"
+        mc:Ignorable="d"
+        Title="一键添加自定义人机" Height="442" Width="580.8" ResizeMode="CanMinimize" Icon="icon.jpg">
+    <Grid Margin="0,0,3.4,-3.4">
+        <StackPanel HorizontalAlignment="Center" Margin="53.6,225,333.2,0.2" Width="31" Grid.Column="1"/>
+        <Button HorizontalAlignment="Left" Margin="83.6,192,0,0" VerticalAlignment="Top" Width="95" Height="38" Click="OnAddClick" Grid.Column="1">
+            <Label Content="添加"/>
+        </Button>
+        <Label Content="客户端通讯方法：" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <RadioButton x:Name="Radio_Path" Content="输入客户端路径" HorizontalAlignment="Left" Margin="26.6,17,0,0" VerticalAlignment="Top" IsChecked="True" Checked="InputPath_Checked" Grid.Column="1"/>
+        <RadioButton x:Name="Radio_PortAndToken" Content="输入端口和token" HorizontalAlignment="Left" Margin="143.6,17,0,0" VerticalAlignment="Top" Checked="PortAndToken_Checked" Grid.Column="1"/>
+        <Label Content="客户端路径：" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" FontSize="13" Width="82" Height="26"/>
+        <TextBox x:Name="TextBox_Path" HorizontalAlignment="Left" Margin="92,42,0,0" TextWrapping="Wrap" Text="D:/Riot Games/League of Legends (PBE)" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Height="22" Width="469" BorderBrush="{x:Null}" Grid.ColumnSpan="2"/>
+        <Label Content="端口：" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_Port" HorizontalAlignment="Left" Margin="50,73,0,0" TextWrapping="Wrap" Text="25565" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Height="16" Width="42" BorderBrush="{x:Null}" MaxLength="5" IsEnabled="False"/>
+        <Label Content="token:" HorizontalAlignment="Left" Margin="113,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.523,0.891" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TextBox_Token" HorizontalAlignment="Left" Margin="5.6,73,0,0" TextWrapping="Wrap" Text="FFFFFFFFFFFFFFFFFFFFFF" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Height="16" Width="402" BorderBrush="{x:Null}" IsEnabled="False" Grid.Column="1"/>
+        <Label Content="自定义电脑设置：" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label Content="电脑难度：" HorizontalAlignment="Left" Margin="53.6,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.795,0.438" Grid.Column="1"/>
+        <ComboBox x:Name="ComboBox_Difficulty" HorizontalAlignment="Left" Margin="128.6,144,0,0" VerticalAlignment="Top" Width="87" Loaded="OnDifficultyLoaded" RenderTransformOrigin="0.818,0.5" Grid.Column="1"/>
+        <Label Content="电脑ID：" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboBox_ID" HorizontalAlignment="Left" Margin="69,144,0,0" VerticalAlignment="Top" Width="90" Loaded="OnBotIDLoaded" IsEditable="True" Height="22" IsSynchronizedWithCurrentItem="False" IsTextSearchEnabled="False" SelectionChanged="OnIDChanged" Grid.ColumnSpan="2" />
+        <Label Content="输出：" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock x:Name="Textblock_Outupt" HorizontalAlignment="Left" Margin="10,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="93" Width="551" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}" Grid.ColumnSpan="2"/>
+        <Label Content="队伍：" HorizontalAlignment="Left" Margin="269.6,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.698,0.352" Grid.Column="1"/>
+        <ComboBox x:Name="ComboBox_Team" HorizontalAlignment="Left" Margin="320.6,144,0,0" VerticalAlignment="Top" Width="87" Loaded="OnTeamsLoaded" Grid.Column="1"/>
+        <Label Content="（客户端难度显示错误为正常现象）" HorizontalAlignment="Left" Margin="191.2,203,0,0" VerticalAlignment="Top" FontSize="13" Background="White" Foreground="#FFA30E0E" Grid.Column="1"/>
+        <Label Content="本软件为完全免费，如发现盗卖请联系作者！" Grid.Column="1" HorizontalAlignment="Left" Margin="0.2,373,0,0" VerticalAlignment="Top" FontWeight="Bold" Background="{x:Null}" Foreground="Red"/>
+        <Label Content="（客户端路径为LeagueClient.exe所在目录）" HorizontalAlignment="Left" Margin="160.2,94,-56.8,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="315" Grid.Column="1" Foreground="#FFA30E0E"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="418*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window>
