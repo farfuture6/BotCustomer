@@ -4,6 +4,7 @@ Note:
 The Bots all difficulty in Howling Abyss seems to stuipds but sometimes they can use teleport.  
 In Summoner's Rift,the UBER bots just stand in their fountain.  
 If you create a bot but it's not visable in the selecet list,your game may not start.  
+  
 在LOL的自定义中添加更多难度的人机。 
 注意：
 大乱斗的人机虽然看起来蠢但是有时候会突然用tp。  
