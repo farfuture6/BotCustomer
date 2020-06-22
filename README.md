@@ -1,5 +1,5 @@
 # BotCustomer 一键添加自定义人机
-Add more difficulty bots in your League of Legends' custom games. 在LOL的自定义中添加更多难度的人机。
+Add more difficulty bots in your League of Legends' custom games. 在LOL的自定义中添加更多难度的人机。  
 Note:
 The Bots all difficulty in Howling Abyss seems to stuipds but sometimes they can use teleport.  
 大乱斗的人机虽然看起来蠢但是有时候会突然用tp。  
