@@ -27,7 +27,9 @@ namespace BotCustomer
         EASY,
         MEDIUM,
         HARD,
-        UBER
+        UBER,
+        TUTORIAL,
+        INTRO
     };
     public enum Team{
         Blue,
@@ -46,7 +48,9 @@ namespace BotCustomer
             "EASY",
             "MEDIUM",
             "HARD",
-            "UBER"
+            "UBER",
+            "TUTORIAL",
+            "INTRO"
         };
         public List<botChampions> botChampionsList = new List<botChampions>{
             new botChampions {
